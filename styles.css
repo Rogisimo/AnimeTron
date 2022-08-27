@@ -82,6 +82,13 @@ nav{
     padding: 16px;
 }
 
+.search-button{
+    width: 100px;
+    border-radius: 12px;
+    border: 1px solid gray;
+    margin-top: 12px;
+}
+
 
 /* Quotes section */
 
