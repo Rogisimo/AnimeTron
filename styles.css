@@ -105,19 +105,42 @@ nav{
 .quote-cards{
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 100%;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 .quote-card{
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    justify-content: center;
     border: 1px solid gray;
     border-radius: 12px;
-    width: calc(100%/3);
-    margin-left: 8px;
+    margin-bottom: 24px;
+    height: 50vh;
+    position: relative;
+    background-image: url("/assets/quote-card.jpg");
+    background-position: center;
+    
+}
+.quote-card-anime-name{
+    position: absolute;
+    top: 0;
+    margin-top: 12px;
+    font-size: 34px;
+    color: white;
+}
+
+.qoute-card-anime-character-name{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 12px;
+    color: white;
+}
+.qoute-card-qoute{
+    text-align: center;
+    display: flex;
+    width: 100%;
+    font-size: 20px;
+    color: white;
 }
 
 /* Footer */
