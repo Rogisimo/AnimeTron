@@ -179,9 +179,15 @@ nav{
     margin-bottom: 200px;
     height: 50vh;
     position: relative; 
-    box-shadow: 0 0 20px 8px #d0d0d0
+    box-shadow: 0 0 20px 8px #d0d0d0;
+    width: 100%;
+}
+.quote-card p{
+    display: flex;
+    justify-content: center;
 }
 .quote-card-anime-name{
+    text-align: center;
     position: absolute;
     top: 0;
     margin-top: 12px;
@@ -203,3 +209,27 @@ nav{
     color: black;
 }
 
+/* Small phones, tablets, large smarthphones */
+
+@media(max-width: 768px){
+    .serach-bar{
+        width: 85%;
+    }
+    .quote-card{
+        height: 40vh;
+    }
+    .quote-card p{
+        font-size: 16px;
+    }
+}
+
+/* Small phones, large smarthphones */
+
+@media (max-width: 550px){
+    .landing-page-header{
+        font-size: 35px;
+    }
+    .quote-card p{
+        font-size: 16px;
+    }
+}
