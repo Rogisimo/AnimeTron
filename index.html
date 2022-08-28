@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AnimeTron</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
     <section class="landing-page">
@@ -14,16 +15,19 @@
                 <h1 class="logo-text">Anime<span class="red">Tron</span></h1>
             </figure>
             <ul class="nav-link-list">
-                <li class="nav-link"><a href="#">Home</a></li>
-                <li class="nav-link"><a href="#">Find Quote</a></li>
-                <li class="nav-link"><a href="#">Contact</a></li>
+                <li><a href="#" class="nav-link nav-link-ltr">Home</a></li>
+                <li><a href="#" class="nav-link nav-link-ltr">Find Quote</a></li>
+                <li><a href="#" class="nav-link nav-link-ltr">Contact</a></li>
             </ul>
         </nav>
         <div class="search">
-            <h1 class="landing-page-header red">
-                Get Anime Quote
+            <h1 class="landing-page-header">
+                GET ANIME QUOTE
             </h1>
-            <input type="text" class="quote-search" placeholder="Dragon Ball Z, Goku...">
+            <div class="serach-bar">
+                <input type="text" class="quote-search" placeholder="Anime name or character name">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
             <button class="search-button">Search</button>
         </div>
     </section>
@@ -32,29 +36,11 @@
             <div class="row">
                 <h3 class="quotes-header">Search results for:</h3>
                 <div class="quote-cards">
-                    <div class="quote-card">
-                        <h2 class="quote-card-anime-name">${quote.anime}</h2>
-                        <p class="qoute-card-qoute">${quote.quote} Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quas earum autem corporis odit nemo recusandae dicta, ipsum cum maiores consequatur obcaecati quasi ea vero nisi expedita quam facilis fuga soluta reprehenderit? Modi odit numquam saepe et quas eum quisquam?</p>
-                        <p class="qoute-card-anime-character-name">~${quote.character}</p>
-                    </div>
+
                 </div>
             </div>
         </div>
     </section>
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="footer-container">
-                    <ul class="footer-links">
-                        <li class="footer-link"><a href="#">Home</a></li>
-                        <li class="footer-link"><a href="#">Find Quotes</a></li>
-                        <li class="footer-link"><a href="#">Contact</a></li>
-                    </ul>
-                    </div>
-                    <h1 class="logo footer-logo">Anime<span class="red">Tron</span></h1>
-                </div>
-            </div>
-        </footer>
-</body>7
+</body>
 <script src="index.js"></script>
 </html>
