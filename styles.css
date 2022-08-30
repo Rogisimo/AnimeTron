@@ -209,6 +209,27 @@ nav{
     color: black;
 }
 
+.quotes-loading-spinner{
+    display: none !important;
+}
+.quotes-loading .quotes-loading-spinner{
+    display: block !important;
+}
+.fa-spinner{
+    animation: rotate 500ms infinite linear;
+    font-size: 120px;
+    margin-top: 48px;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
 /* Small phones, tablets, large smarthphones */
 
 @media(max-width: 768px){
